@@ -11,7 +11,7 @@ class Skael < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/skael-dev/skael/releases/download/v0.3.0/skael_0.3.0_darwin_amd64.tar.gz"
-      sha256 "6f18102e842e528ca320609c3420a568ad92a9ebfb0b5070950f7a6d49b86efb"
+      sha256 "c7fb0da815259cc7cf081c56380844c43e29a0761e0fbad56f4735f30ac1878e"
 
       define_method(:install) do
         bin.install "skael"
@@ -19,7 +19,7 @@ class Skael < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/skael-dev/skael/releases/download/v0.3.0/skael_0.3.0_darwin_arm64.tar.gz"
-      sha256 "b4a328e4553ceb193965217d1c07c318b6a7d20a9af895717f74a6ae569030d6"
+      sha256 "e160d93d8f946b3b414c70509693348cc2a16fb9b1369c0bdb93b342d6fbd697"
 
       define_method(:install) do
         bin.install "skael"
@@ -30,14 +30,14 @@ class Skael < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/skael-dev/skael/releases/download/v0.3.0/skael_0.3.0_linux_amd64.tar.gz"
-      sha256 "531c9e12d9d04c1bf2928207de5a11ddba1fca19bb5d1f05adcc290e00653fc4"
+      sha256 "7400ea55e84056ffb6fc5c97c7f5a19f1258f46e69b818fa0756983cb0b8b609"
       define_method(:install) do
         bin.install "skael"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/skael-dev/skael/releases/download/v0.3.0/skael_0.3.0_linux_arm64.tar.gz"
-      sha256 "0fd004be1740dceefd72e7964aacf203d3518596e292ed49e1f8cf31a970303f"
+      sha256 "febaf43b11545469e81a2c90f9889cc0d015b865a55f33115e164790120689d7"
       define_method(:install) do
         bin.install "skael"
       end
