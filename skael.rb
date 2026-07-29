@@ -5,21 +5,21 @@
 class Skael < Formula
   desc "Control plane for AI agent skills"
   homepage "https://skael.dev"
-  version "0.8.0"
+  version "0.9.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/skael-dev/skael/releases/download/v0.8.0/skael_0.8.0_darwin_amd64.tar.gz"
-      sha256 "167062a0c531d23400b2e93886bae9b031f89faa9926ec516aa08ccb8d309a4b"
+      url "https://github.com/skael-dev/skael/releases/download/v0.9.0/skael_0.9.0_darwin_amd64.tar.gz"
+      sha256 "369c0971875a0c2927c074d8c2afbd4994aa22e9471130d1fac4785c804580de"
 
       define_method(:install) do
         bin.install "skael"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/skael-dev/skael/releases/download/v0.8.0/skael_0.8.0_darwin_arm64.tar.gz"
-      sha256 "a5b864437fd4596874e419d286c24e3c9e9ccebb2b27ac2a3976859f08ef3df4"
+      url "https://github.com/skael-dev/skael/releases/download/v0.9.0/skael_0.9.0_darwin_arm64.tar.gz"
+      sha256 "3d429d9e50d449355e006cb553832b5dffb657865ad4e0d6b22b6526d3dfbe3f"
 
       define_method(:install) do
         bin.install "skael"
@@ -29,15 +29,15 @@ class Skael < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/skael-dev/skael/releases/download/v0.8.0/skael_0.8.0_linux_amd64.tar.gz"
-      sha256 "463504145616fd194075b15ad45131c544fea3dbf0395e56d93fb36db714b797"
+      url "https://github.com/skael-dev/skael/releases/download/v0.9.0/skael_0.9.0_linux_amd64.tar.gz"
+      sha256 "5d82c6bba58a8c4ceea38718f58c63b0d674ee2d75bc94423b38fb7589fc727a"
       define_method(:install) do
         bin.install "skael"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/skael-dev/skael/releases/download/v0.8.0/skael_0.8.0_linux_arm64.tar.gz"
-      sha256 "3fd1cc76da568ebdfb55c9bf31f6a93bc7f49902755873c4eb9e330f48619137"
+      url "https://github.com/skael-dev/skael/releases/download/v0.9.0/skael_0.9.0_linux_arm64.tar.gz"
+      sha256 "1a888e9b82a82845e95aafc7407ca9141bed376391133c19a58e093d9f5a3e52"
       define_method(:install) do
         bin.install "skael"
       end
