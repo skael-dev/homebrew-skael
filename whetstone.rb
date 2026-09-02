@@ -5,21 +5,21 @@
 class Whetstone < Formula
   desc "Authoring and evaluation toolkit for AI agent skills"
   homepage "https://skael.dev"
-  version "0.12.0"
+  version "0.13.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/skael-dev/skael/releases/download/v0.12.0/whetstone_0.12.0_darwin_amd64.tar.gz"
-      sha256 "eeb1ac799aaf6cc238173ecb43a17fcffc784dd8813d91c942c0b9b941b5afbc"
+      url "https://github.com/skael-dev/skael/releases/download/v0.13.0/whetstone_0.13.0_darwin_amd64.tar.gz"
+      sha256 "d37cb9c33344bd233f6ea25f8b45e76f64f429373d3f1a495a38fab39cad8ae2"
 
       define_method(:install) do
         bin.install "whetstone"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/skael-dev/skael/releases/download/v0.12.0/whetstone_0.12.0_darwin_arm64.tar.gz"
-      sha256 "b856bc9f05362bd37861438eddc84aaf39407e7a6daa82cb2bbb13189bf3fd5b"
+      url "https://github.com/skael-dev/skael/releases/download/v0.13.0/whetstone_0.13.0_darwin_arm64.tar.gz"
+      sha256 "71cb78f5c7286278338f31ba7a96bffa5b043852f0e8f2e847e85b46a7e4ae2c"
 
       define_method(:install) do
         bin.install "whetstone"
@@ -29,15 +29,15 @@ class Whetstone < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/skael-dev/skael/releases/download/v0.12.0/whetstone_0.12.0_linux_amd64.tar.gz"
-      sha256 "ca90fa4d9025ceb3145bfcfef1be264f34af895f7297f8d0f2054bcf295477f4"
+      url "https://github.com/skael-dev/skael/releases/download/v0.13.0/whetstone_0.13.0_linux_amd64.tar.gz"
+      sha256 "b5742757a2116c5d626ab9dbcd075c6cd3928c60e3f8c9aeac2120a2ef0894b8"
       define_method(:install) do
         bin.install "whetstone"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/skael-dev/skael/releases/download/v0.12.0/whetstone_0.12.0_linux_arm64.tar.gz"
-      sha256 "e2d572c65bb63cf60f038577e0b8ac2e72587d8688ed50e23b1909d64106e13a"
+      url "https://github.com/skael-dev/skael/releases/download/v0.13.0/whetstone_0.13.0_linux_arm64.tar.gz"
+      sha256 "657bfd1f80777cd8211c669d451a1f5464174c3d11e6c6b8777ac2d916e7ac93"
       define_method(:install) do
         bin.install "whetstone"
       end
