@@ -6,25 +6,25 @@ cask "skael" do
     end
   end
 
-  version "0.18.0"
+  version "0.19.0"
 
   on_macos do
     on_arm do
-      sha256 "9b6fa2ff55945a72b4f541e36d4f3f903bff830518637431ca3dfa90305f6fea"
+      sha256 "f9cbd640faabf588bab89ed4fbfe6aaa647696389f3d4665b0b3946e4af93547"
       url "https://github.com/skael-dev/skael/releases/download/v#{version}/skael_#{version}_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "35fac456abfd57423e13563fae8944b32a0fe382772cf1a2959597a1a42e5e23"
+      sha256 "6f7dda9a64609912c8f0211a6a64ea718a1cc8d4e39b66efa44a3686310f5765"
       url "https://github.com/skael-dev/skael/releases/download/v#{version}/skael_#{version}_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "bdfc18df2a919dabdd686ff88f89301a70f3ea41e6385a6fd85bbe915aa97ebf"
+      sha256 "6aeb95ad7b7f81a044c7c4d44d2d6e7b671874c7953d309f38ab30618e962469"
       url "https://github.com/skael-dev/skael/releases/download/v#{version}/skael_#{version}_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "6a776f371c4ea4fba301cdf8b4c3c3b6358606b636d1971c34a55662d235ade0"
+      sha256 "b6711e2b3385accc2dd15f3ebd4764daf6094e2ffce1c2507dedd66fe5f44b04"
       url "https://github.com/skael-dev/skael/releases/download/v#{version}/skael_#{version}_linux_amd64.tar.gz"
     end
   end
