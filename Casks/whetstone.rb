@@ -6,25 +6,25 @@ cask "whetstone" do
     end
   end
 
-  version "0.20.0"
+  version "0.21.0"
 
   on_macos do
     on_arm do
-      sha256 "ab488240490149d7b32b33367ccc454d2d706df277a498cf04e2aa0952c84bdd"
+      sha256 "aa9f5412cf798a10fb8492551649c68feea8c0e7e290261fc95b98b060f66800"
       url "https://github.com/skael-dev/skael/releases/download/v#{version}/whetstone_#{version}_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "781eeb90cadf9a5e871c79c6be7e8ee7cd24f06a80b49065563cd250c2e22919"
+      sha256 "5edf560efdbdc54eececf07dd1e65dc00e4c3c82953285671bc36189ee61f3fc"
       url "https://github.com/skael-dev/skael/releases/download/v#{version}/whetstone_#{version}_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "0ec29c321390b53dbe4846508c6916c2ed641d50b664108a39d01d1a89000233"
+      sha256 "aa09e9d0e1eb91d5fbc0b80aef6fe90f77d3589eea7a643673be6ae12d0baa2c"
       url "https://github.com/skael-dev/skael/releases/download/v#{version}/whetstone_#{version}_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "896e3c1ca2d9addc1e4bc42ec739a341329403f717ee96721266593125f16f0a"
+      sha256 "54d1658f1401e3f8a826c3b493627827f9e52334c2caca760f2b1044e43138c5"
       url "https://github.com/skael-dev/skael/releases/download/v#{version}/whetstone_#{version}_linux_amd64.tar.gz"
     end
   end
